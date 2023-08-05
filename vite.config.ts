@@ -3,6 +3,8 @@
 import { defineConfig } from 'vitest/config';
 import angular from '@analogjs/vite-plugin-angular';
 
+const isCI = !!process.env['CI'];
+
 export default defineConfig(({ mode }) => {
   return {
     plugins: [
@@ -18,6 +20,7 @@ export default defineConfig(({ mode }) => {
       browser: {
         enabled: true,
         name: 'chrome',
+        headless: isCI,
       },
     },
     define: {
