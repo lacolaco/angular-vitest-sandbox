@@ -19,8 +19,9 @@ export default defineConfig(({ mode }) => {
       include: ['src/**/*.spec.ts'],
       browser: {
         enabled: true,
-        name: 'chrome',
+        name: 'chromium',
         headless: isCI,
+        provider: 'playwright',
       },
     },
     define: {

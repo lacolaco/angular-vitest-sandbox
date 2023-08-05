@@ -12,6 +12,6 @@ jobs:
           node-version-file: "package.json"
       - uses: pnpm/action-setup@v2
       - run: pnpm install
-      - run: pnpm test
+      - run: pnpm run test
         env:
           CI: true
