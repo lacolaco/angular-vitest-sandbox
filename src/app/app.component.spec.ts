@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { render } from '@testing-library/angular';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -27,5 +28,11 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain(
       'angular-vitest-sandbox app is running!'
     );
+  });
+
+  it('should render title (with testing-library)', async () => {
+    const { getByText } = await render(AppComponent);
+
+    expect(getByText('angular-vitest-sandbox app is running!')).toBeTruthy();
   });
 });
