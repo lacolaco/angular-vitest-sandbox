@@ -8,7 +8,6 @@ const isCI = !!process.env['CI'];
 export default defineConfig({
   plugins: [
     angular({
-      jit: false,
       tsconfig: 'tsconfig.spec.json',
     }),
   ],
