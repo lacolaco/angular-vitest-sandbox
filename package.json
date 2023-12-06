@@ -31,7 +31,7 @@
     "@angular-devkit/build-angular": "^16.2.0",
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "^16.2.2",
-    "@testing-library/angular": "^14.2.0",
+    "@testing-library/angular": "^15.0.0",
     "@vitest/browser": "^0.34.1",
     "playwright": "^1.36.2",
     "typescript": "~5.1.3",
