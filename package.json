@@ -1,41 +1,45 @@
 {
   "name": "angular-vitest-sandbox",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "vitest"
+    "test": "vitest",
+    "postinstall": "playwright install"
   },
   "private": true,
   "engines": {
-    "node": "^18.16.1"
+    "node": "^20.13.1"
   },
   "packageManager": "pnpm@8.7.4",
   "dependencies": {
-    "@angular/animations": "^16.2.2",
-    "@angular/common": "^16.2.2",
-    "@angular/compiler": "^16.2.2",
-    "@angular/core": "^16.2.2",
-    "@angular/forms": "^16.2.2",
-    "@angular/platform-browser": "^16.2.2",
-    "@angular/platform-browser-dynamic": "^16.2.2",
-    "@angular/router": "^16.2.2",
+    "@angular/animations": "^18.0.3",
+    "@angular/common": "^18.0.3",
+    "@angular/compiler": "^18.0.3",
+    "@angular/core": "^18.0.3",
+    "@angular/forms": "^18.0.3",
+    "@angular/platform-browser": "^18.0.3",
+    "@angular/platform-browser-dynamic": "^18.0.3",
+    "@angular/router": "^18.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.14.7"
   },
   "devDependencies": {
-    "@analogjs/vite-plugin-angular": "0.2.2",
-    "@angular-devkit/build-angular": "^16.2.0",
-    "@angular/cli": "~16.2.0",
-    "@angular/compiler-cli": "^16.2.2",
-    "@testing-library/angular": "^14.2.0",
-    "@vitest/browser": "^0.34.1",
-    "playwright": "^1.36.2",
-    "typescript": "~5.1.3",
-    "vite": "^4.4.8",
-    "vitest": "^0.34.1"
+    "@analogjs/vite-plugin-angular": "1.5.0",
+    "@analogjs/vitest-angular": "^1.5.0",
+    "@angular/build": "^18.0.4",
+    "@angular/cli": "~18.0.4",
+    "@angular/compiler-cli": "^18.0.3",
+    "@testing-library/angular": "^16.0.0",
+    "@vitest/browser": "^1.6.0",
+    "playwright": "^1.44.1",
+    "typescript": "~5.4.5",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0",
+    "webdriverio": "^8.38.2"
   }
 }
