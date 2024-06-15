@@ -7,8 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "vitest",
-    "postinstall": "playwright install"
+    "test": "vitest"
   },
   "private": true,
   "engines": {
@@ -36,7 +35,6 @@
     "@angular/compiler-cli": "^18.0.3",
     "@testing-library/angular": "^16.0.0",
     "@vitest/browser": "^1.6.0",
-    "playwright": "^1.44.1",
     "typescript": "~5.4.5",
     "vite": "^5.3.1",
     "vitest": "^1.6.0",
