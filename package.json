@@ -33,7 +33,7 @@
     "@angular/build": "^18.0.4",
     "@angular/cli": "~18.0.4",
     "@angular/compiler-cli": "^18.0.3",
-    "@testing-library/angular": "^16.0.0",
+    "@testing-library/angular": "^17.0.0",
     "@vitest/browser": "^1.6.0",
     "typescript": "~5.4.5",
     "vite": "^5.3.1",
