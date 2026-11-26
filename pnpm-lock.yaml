@@ -58,8 +58,8 @@ importers:
         specifier: ^18.0.3
         version: 18.0.3(@angular/compiler@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.4.5)
       '@testing-library/angular':
-        specifier: ^16.0.0
-        version: 16.0.0(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/router@18.0.3(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1))
+        specifier: ^19.0.0
+        version: 19.6.0(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/router@18.0.3(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1))(@testing-library/dom@10.4.2)
       '@vitest/browser':
         specifier: ^3.2.7
         version: 3.2.7(vite@5.4.21(@types/node@20.14.2)(less@4.2.0)(sass@1.77.2)(terser@5.31.0))(vitest@3.2.7)(webdriverio@9.33.1(bare-buffer@3.7.3))
@@ -1579,17 +1579,12 @@ packages:
     resolution: {integrity: sha512-8iKx79/F73DKbGfRf7+t4dqrc0bRr0thdPrxAtCKWRm/F0tG71i6O1rvlnScncJLLBZHn3h8M3c1BSUAb9yu8g==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  '@testing-library/angular@16.0.0':
-    resolution: {integrity: sha512-9o/ZRavtKSFwiHj83h8A3WR3afyamjXC2i86RubGFybA2vB8A6Gs8ZtdPSIYQAl2wj0CNt0cI7ytJD5z71iMMg==}
+  '@testing-library/angular@19.6.0':
+    resolution: {integrity: sha512-NruHlQHQK00qJ+8NCbsmWGknCqprPN9js4jM/sxDNwsvpv1NOjw3D+t9WY5q6J4+2VAUOS51Yca36Pr+bPUAsw==}
     peerDependencies:
-      '@angular/common': '>= 17.0.0'
-      '@angular/core': '>= 17.0.0'
-      '@angular/platform-browser': '>= 17.0.0'
-      '@angular/router': '>= 17.0.0'
-
-  '@testing-library/dom@10.1.0':
-    resolution: {integrity: sha512-wdsYKy5zupPyLCW2Je5DLHSxSfbIp6h80WoHOQc+RPtmPGA52O9x5MJEkv92Sjonpq+poOAtUKhh1kBGAXBrNA==}
-    engines: {node: '>=18'}
+      '@angular/core': '>= 21.0.0'
+      '@angular/router': '>= 21.0.0'
+      '@testing-library/dom': ^10.0.0
 
   '@testing-library/dom@10.4.2':
     resolution: {integrity: sha512-yzr2S9HyAIdhz2/6qHgbs665Q7PKVcDF05vsOlHPxG1mo36gKVesdYVeDLnXgfjJ03CrKRk08knc6+E/9m8v2Q==}
@@ -2871,6 +2866,7 @@ packages:
   glob@10.4.1:
     resolution: {integrity: sha512-2jelhlq3E4ho74ZyVLN03oKdAZVUa6UDZzFLVH1H7dnoax+y9qyaq8zBkfDIggjniU19z0wU18y16jMB2eyVIw==}
     engines: {node: '>=16 || 14 >=14.18'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
@@ -4448,6 +4444,7 @@ packages:
   tar@6.1.15:
     resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   teex@1.0.1:
     resolution: {integrity: sha512-eYE6iEI62Ni1H8oIa7KlDU6uQBtqr4Eajni3wX7rpfXD8ysFx8z0+dri+KWEPWpBsxXfxu58x/0jvTVT1ekOSg==}
@@ -6558,25 +6555,12 @@ snapshots:
       '@sigstore/core': 1.1.0
       '@sigstore/protobuf-specs': 0.3.2
 
-  '@testing-library/angular@16.0.0(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/router@18.0.3(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1))':
+  '@testing-library/angular@19.6.0(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/router@18.0.3(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1))(@testing-library/dom@10.4.2)':
     dependencies:
-      '@angular/common': 18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
       '@angular/core': 18.0.3(rxjs@7.8.1)(zone.js@0.14.7)
-      '@angular/platform-browser': 18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))
       '@angular/router': 18.0.3(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.0.3(@angular/animations@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.0.3(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.0.3(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1)
-      '@testing-library/dom': 10.1.0
+      '@testing-library/dom': 10.4.2
       tslib: 2.6.3
-
-  '@testing-library/dom@10.1.0':
-    dependencies:
-      '@babel/code-frame': 7.24.7
-      '@babel/runtime': 7.24.5
-      '@types/aria-query': 5.0.1
-      aria-query: 5.3.0
-      chalk: 4.1.2
-      dom-accessibility-api: 0.5.16
-      lz-string: 1.5.0
-      pretty-format: 27.5.1
 
   '@testing-library/dom@10.4.2':
     dependencies:
